@@ -22,7 +22,7 @@ Some of the data is missing from the new establishment so a query is executed to
 
 Data within the Dover Local Authority will not be considered for the project and therefore removed from the dataset. To accomplish this, a query and variable is established where 'LocalAuthorityName' is 'Dover'. Using this query/variable, we get the total number of documents for dover using .count_documents(), execute .delete_many() to remove all the Dover records from the dataset, re-run the .count_documents() to ensure all Dover documents have been deleted and finally check that no other documents were impacted using .find_one().
 
-To complete the clean-up we use update_many to convert latitude and longitude values in the dataset to decimal numbers, convert RatiingValue data to Integer and check that the data values are now number (decimal/integer) types.<br><br><br>
+To complete the clean-up we use update_many to convert latitude and longitude values in the dataset to decimal numbers, convert RatiingValue data to Integer and check that the data values are now number (decimal/integer) types.<br><br>
 
 
 
